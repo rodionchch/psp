@@ -50,7 +50,6 @@ const SignUpScreen: React.FC = () => {
             [form.firstName]: '',
             [form.middleName]: '',
             [form.phone]: '+7 (___) ___-__-__',
-            [form.phone]: '',
             [form.promo]: '',
             [form.city]: '',
             [form.personalData]: false,
