@@ -25,9 +25,7 @@ const OtpScreen: React.FC = () => {
           code={code}
           setCode={setCode}
           onCodeFilled={code => {
-            if (code === CODE) {
-              console.log('hello');
-            }
+            console.log('Code: ', code);
           }}
         />
 
