@@ -27,4 +27,5 @@ export interface IStyles {
   zIndex?: number;
   check?: boolean;
   first?: boolean;
+  open?: boolean;
 }

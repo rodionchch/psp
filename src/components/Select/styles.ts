@@ -1,4 +1,6 @@
 import styled from 'styled-components/native';
+import {IStyles} from '../../styled/styled';
+import iconArrow from '../../assets/icons/arrow.png';
 
 export const Select = styled.TouchableOpacity`
   height: 48px;
@@ -48,3 +50,18 @@ export const Option = styled.TouchableOpacity`
 `;
 
 export const OptionText = styled.Text``;
+
+export const ArrowIcon = styled.Image.attrs({
+  source: iconArrow,
+})<IStyles>`
+  width: 8px;
+  height: 4px;
+  position: absolute;
+  right: 18px;
+  top: 22px;
+  ${props =>
+    props?.open &&
+    `
+        transform: rotate(180deg)
+  `};
+`;

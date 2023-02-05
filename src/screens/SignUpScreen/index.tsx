@@ -226,7 +226,7 @@ const SignUpScreen: React.FC = () => {
                 </s.Agreement>
               </s.Agreements>
 
-              <s.Item>
+              <s.Item style={{marginBottom: 18}}>
                 <s.Label>Введите {'\n'}промокод</s.Label>
                 <Input
                   name={form.promo}

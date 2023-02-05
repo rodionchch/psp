@@ -58,6 +58,7 @@ const Select: React.FC<SelectProps> = ({
           ))}
         </s.Options>
       )}
+      <s.ArrowIcon open={showSelect} />
     </s.Select>
   );
 };
