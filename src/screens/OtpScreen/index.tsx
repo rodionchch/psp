@@ -40,6 +40,7 @@ const OtpScreen: React.FC = () => {
               navigate('Success');
             } else {
               Alert.alert('Неверный код авторизации');
+              setCode('')
             }
           }}
           label={'Продолжить'}
