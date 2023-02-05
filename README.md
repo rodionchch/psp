@@ -1,5 +1,7 @@
 npm i
+
 cd ios/
+
 pod install
 
 Разрабатывалось и тестировалось на: iPhone 14 Pro
