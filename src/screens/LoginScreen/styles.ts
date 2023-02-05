@@ -2,12 +2,12 @@ import styled from 'styled-components/native';
 import iconLogo from '../../assets/icons/logo.png';
 
 export const SafeAreaView = styled.SafeAreaView`
-  background-color: ${props => props.theme.colors.main};
+  background-color: ${props => props?.theme?.colors?.main};
   flex: 1;
 `;
 
 export const Content = styled.View`
-  background-color: ${props => props.theme.colors.main};
+  background-color: ${props => props?.theme?.colors?.main};
   width: 100%;
   height: 100%;
   align-items: center;
@@ -55,5 +55,5 @@ export const ButtonTitle = styled.Text`
   color: #fff;
   font-size: 17px;
   font-weight: 600;
-  font-family: ${props => props.theme.font.family};
+  font-family: ${props => props?.theme?.font?.family};
 `;

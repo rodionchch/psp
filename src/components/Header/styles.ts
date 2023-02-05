@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import iconBack from '../../assets/icons/close.png';
 
 export const Header = styled.SafeAreaView`
-  background-color: ${props => props.theme.colors.main};
+  background-color: ${props => props?.theme?.colors?.main};
   height: 60px;
   align-items: center;
   flex-direction: row;
@@ -25,6 +25,6 @@ export const ButtonBackIcon = styled.Image.attrs({
 export const Title = styled.Text`
   color: #fff;
   font-size: 18px;
-  font-family: ${props => props.theme.font.family};
+  font-family: ${props => props?.theme?.font?.family};
   font-weight: 600;
 `;

@@ -8,6 +8,8 @@ import theme from './styled/theme';
 
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import OtpScreen from './screens/OtpScreen';
+import SuccessScreen from './screens/SuccessScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,12 +28,9 @@ const App: React.FC = () => {
           }}>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="SignUp" component={SignUpScreen} />
-
-          {/* <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}> */}
+          <Stack.Screen name="Otp" component={OtpScreen} />
+          <Stack.Screen name="Success" component={SuccessScreen} />
         </Stack.Navigator>
-        {/* </ScrollView> */}
       </ThemeProvider>
     </NavigationContainer>
   );

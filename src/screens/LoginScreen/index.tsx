@@ -1,13 +1,9 @@
-import {useEffect} from 'react';
+import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import * as s from './styles';
 
 const LoginScreen: React.FC = () => {
   const {navigate} = useNavigation<any>();
-
-  useEffect(() => {
-    console.log('=====>');
-  }, []);
 
   return (
     <s.SafeAreaView>
